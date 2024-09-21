@@ -1,0 +1,79 @@
+/* General styling for the calculator container */
+/* General styling for the calculator container */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    width: 320px;
+}
+
+.display {
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    font-size: 32px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Styling for individual buttons */
+button {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Styling for operation buttons */
+button.operation {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+button.operation:hover {
+    background-color: #e67e22;
+}
+
+/* Special styling for the clear, delete, and equal buttons */
+button#clear,
+button#delete,
+button#equals {
+    background-color: #d9534f;
+    color: white;
+}
+
+button#clear:hover,
+button#delete:hover,
+button#equals:hover {
+    background-color: #c9302c;
+}
